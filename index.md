@@ -25,6 +25,9 @@ Asylbewerbende befinden sich in einer prekären Lage - nachdem sie aus einer and
 
 Mit einem Internetzugang können die Menschen nicht nur Kontakt zu ihren Verwandten und Bekannten aufnehmen und halten, sondern auch mit der Öffentlichkeit kommunizieren, wo meistens nur über sie gesprochen wird. Darüber hinaus können sie so auf Informationen über ihre Heimatländer, Gesetze, ihre Rechte und Übersetzungshilfen zugreifen.
 
+Refugees Emancipation unterstützt Geflüchtete beim Aufbau und dem Betrieb von Internetcafés in den Unterkünften.
+Diese werden von den Asylsuchenden selbst verwaltet und stellen somit einen offenen Raum für den Austausch, mit der Öffentlichkeit und untereinander, sowie für alternative Bildungsangebote dar.
+
 Ein Internetzugang, der für viele von uns selbstverständlich ist, ist ein Privileg. Das ist bedauerlich und wir sind davon überzeugt, dass es sich dabei um ein Menschenrecht handeln sollte und der Staat dafür verantwortlich ist, das zu gewährleisten. Auch für Geflüchtete.
 
 Solange das noch nicht der Fall ist, wollen wir Refugees Emancipation mit unseren Fähigkeiten unterstützen. Der erste Schritt ist eine Spendenkampagne, die Ende September anlaufen wird.
