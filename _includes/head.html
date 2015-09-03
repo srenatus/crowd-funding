@@ -7,6 +7,31 @@
 	<link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/styles.css">
 	<script src="{{ site.url }}{{ site.baseurl }}/assets/js/modernizr.min.js"></script>
 	<script src="{{ site.url }}{{ site.baseurl }}/assets/js/countdown.min.js"></script>
+	<script src="{{ site.url }}{{ site.baseurl }}/assets/js/jquery-2.1.4.min.js"></script>
+	<script src="{{ site.url }}{{ site.baseurl }}/assets/js/jquery.socialshareprivacy.min.js"></script>
+	<script type="text/javascript">
+	jQuery(document).ready(function($){
+			if($('#socialshareprivacy').length > 0){
+			$('#socialshareprivacy').socialSharePrivacy({
+				"services"  : {
+					"twitter" : {
+						'dummy_img' : '{{ site.url }}{{ site.baseurl }}/assets/js/plugins/socialshareprivacy/images/dummy_twitter.png'
+					},
+					"facebook" : {
+						'dummy_img' : '{{ site.url }}{{ site.baseurl }}/assets/js/plugins/socialshareprivacy/images/dummy_facebook.png'
+					},
+					"gplus" : {
+						'dummy_img' : '{{ site.url }}{{ site.baseurl }}/assets/js/plugins/socialshareprivacy/images/dummy_gplus.png'
+					}
+				},
+				"css_path"  : "{{ site.url }}{{ site.baseurl }}/assets/js/plugins/socialshareprivacy/socialshareprivacy.css",
+				"lang_path" : "{{ site.url }}{{ site.baseurl }}/assets/js/plugins/socialshareprivacy/lang/",
+				"language"  : "de"
+				});
+			}
+			});
+
+	</script>
 
   {% if site.google_site_verification %}<meta name="google-site-verification" content="{{ site.google_site_verification}}" />{% endif %}
 	{% if site.bing_webmastertools_id %}<meta name="msvalidate.01" content="{{ site.bing_webmastertools_id }}" />{% endif %}
