@@ -1,0 +1,25 @@
+# Press Review
+
+- site1:
+  date: 2015-09-12
+  url:
+    de: http://example.com/de
+  title:
+    de: '...german title'
+    en: 'Title'
+  meta_description:
+    de: 'beschreibung'
+    en: 'some description'
+- site1:
+  date: 2013-09-13
+  url:
+    de: http://example2.com/de
+  title:
+    de: 'Titel'
+    en: 'Title'
+  meta_description:
+    de: 'beschreibung'
+    en: 'some description'
+  teaser:
+    de: 'teaser'
+    en: 'teaser'
