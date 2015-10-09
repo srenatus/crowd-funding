@@ -9,12 +9,36 @@
 {% endcapture %}
   <dd class="accordion-navigation">
     <a href="#panel{{i}}a" class="accordion-element" id ="panel{{i}}a-heading" aria-controls="panel{{i}}a" role="tab">
-      <span class="iconfont"></span>{{ banner.title[page.language] }} ({{ banner.format }})
+      <span class="accordion-icon iconfont"></span>{{ banner.title[page.language] }} ({{ banner.format }})
     </a>
     <div id="panel{{i}}a" class="content" role="tabpanel" aria-labelledby="panel{{i}}a-heading">
       <img src="{{ banner.url }}"/>
-      <input type="text" class="banner-snippet" value="{{ copy | xml_escape }}" onclick="this.select();"/>
+      <input type="text" id="banner-text{{i}}" class="banner-snippet" value="{{ copy | xml_escape }}" onclick="this.select();"/>
+      <button data-tooltip aria-haspopup="true" id="copy-button{{i}}" data-options="hover_delay: 0;" class="copy-button button tiny has-tip tip-bottom" title="Copy to clipboard" data-clipboard-target="#banner-text{{i}}" aria-label="Copy to clipboard (TODO i18n)"><span class="iconfont">&#xf111;</span></button>
     </div>
   </dd>
 {% endfor %}
 </dl>
+<script src="{{ site.url }}{{ site.baseurl }}/assets/js/clipboard.min.js"></script>
+<script type="text/javascript">
+  /*$('.has-tip').focus(function(){ $(this).foundation(); });*/
+
+  var clipboard = new Clipboard('.copy-button');
+
+  clipboard.on('success', function(e) {
+    /*Foundation.libs.tooltip.showTip($('#copy-button4'));*/
+    $(e.trigger.id).attr('title', 'Copied!');
+    console.log($(e.trigger.id));
+
+    console.info('Action:', e.action);
+    console.info('Text:', e.text);
+    console.info('Trigger:', e.trigger.id);
+
+    e.clearSelection();
+  });
+
+  clipboard.on('error', function(e) {
+    console.error('Action:', e.action);
+    console.error('Trigger:', e.trigger);
+  });
+</script>
