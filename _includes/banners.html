@@ -13,7 +13,7 @@
     </a>
     <div id="panel{{i}}a" class="content" role="tabpanel" aria-labelledby="panel{{i}}a-heading">
       <img src="{{ banner.url }}"/>
-      <input type="text" class="banner-snippet" value="{{ copy | xml_escape }}"/>
+      <input type="text" class="banner-snippet" value="{{ copy | xml_escape }}" onclick="this.select();"/>
     </div>
   </dd>
 {% endfor %}
