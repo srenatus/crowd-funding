@@ -86,3 +86,13 @@ section {
   border-color: #3FA9F5 !important;
   background: #fff !important;
 }
+
+.admins {
+  ul {
+    list-style: none;
+    margin-left: 0px;
+    li {
+      padding-bottom: 10px;
+    }
+  }
+}
