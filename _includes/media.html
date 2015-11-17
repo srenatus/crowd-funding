@@ -1,12 +1,13 @@
 {% for item in site.media %}
 <div class="media-item">
-  <button data-reveal-ajax="{{ item.url }}" data-reveal-id="{{ item.title | slugify }}">
-    {{ item.display-title | i18n }}
-  </button>
-  <h2>{{ item.title }} <span class="media-date">{{ item.date }}</span></h2>
+  <a href="{{ item.url }}" data-reveal-ajax="true" data-reveal-id="{{ item.title | slugify }}">
+    {{ item.display-title | i18n }} ({{ item.date }})
+  </a>
+  <div id="{{ item.title | slugify }}" class="reveal-modal large"></div>
   {% comment %}
+  <h2>{{ item.title }} <span class="media-date">{{ item.date }}</span></h2>
   {% include media-{{item.type}}.html url=item.url %}
-  {% endcomment %}
   <p>{{ item.content }}</p>
+  {% endcomment %}
 </div>
 {% endfor %}
