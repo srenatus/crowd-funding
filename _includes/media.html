@@ -1,0 +1,12 @@
+{% for item in site.media %}
+<div class="media-item">
+  <button data-reveal-ajax="{{ item.url }}" data-reveal-id="{{ item.title | slugify }}">
+    {{ item.display-title | i18n }}
+  </button>
+  <h2>{{ item.title }} <span class="media-date">{{ item.date }}</span></h2>
+  {% comment %}
+  {% include media-{{item.type}}.html url=item.url %}
+  {% endcomment %}
+  <p>{{ item.content }}</p>
+</div>
+{% endfor %}

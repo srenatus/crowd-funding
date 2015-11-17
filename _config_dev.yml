@@ -17,8 +17,10 @@ sass:
     line_numbers: true
 
 collections:
-- faq
-- faq_en
+  faq:
+  faq_en:
+  media:
+    output: true
 
 exclude:
     - Gemfile
